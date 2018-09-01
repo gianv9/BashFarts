@@ -1,0 +1,8 @@
+#!/bin/bash
+
+farts=(`ls ~/.gian/farts/fart*`)
+rand=$(($RANDOM%${#farts[@]}))
+# echo "random: $rand"
+# echo "playing ${farts[$rand]}"
+# play the file on your friend's macbook
+afplay ${farts[$rand]}
