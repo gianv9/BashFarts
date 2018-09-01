@@ -1,8 +1,17 @@
 #!/bin/bash
-
-farts=(`ls ~/.gian/farts/fart*`)
+# the following line was extracted from:
+# https://stackoverflow.com/questions/59895/getting-the-source-directory-of-a-bash-script-from-within
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null && pwd )"
+farts=(`ls $DIR/fart*`)
 rand=$(($RANDOM%${#farts[@]}))
 # echo "random: $rand"
 # echo "playing ${farts[$rand]}"
 # play the file on your friend's macbook
-afplay ${farts[$rand]}
+OS=`uname`
+
+if [[ OS -eq 'Linux' ]]
+then
+	aplay ${farts[$rand]}
+else
+	afplay ${farts[$rand]}
+fi
