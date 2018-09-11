@@ -3,7 +3,6 @@ This is a very ambitious project, designed to revolutionize the way you can make
 Current features:
 - Mapping all of the farts (the filename must start with 'fart')
 - choosing a random fart form the folder
+- works on mac and linux
 
 Current limitations:
-- it only works in mac
-- the path to the farts is hardcoded
