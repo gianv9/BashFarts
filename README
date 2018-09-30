@@ -6,3 +6,7 @@ Current features:
 - works on mac and linux
 
 Current limitations:
+
+
+Current errors:
+- Doesn't work on MacOs Darwin. It may be related to the bash version
