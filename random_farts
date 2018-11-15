@@ -2,7 +2,7 @@
 
 # validate input:
 # argument must be an integer...
-if [[ $1 =~ ^[1-9]+$ ]]
+if [[ $1 =~ ^[0-9]+$ ]]
 then
 	totalFarts=$1
 elif [[ $1 == '' ]]
